@@ -5,7 +5,7 @@ import random as rd
 from fastapi.middleware.cors import CORSMiddleware
 import math
 app = FastAPI()
-predictor = CodeRiskPredictor("model_artifacts")
+predictor = PredictorSentiment("model_artifacts")
 
 app.add_middleware(
     CORSMiddleware,
